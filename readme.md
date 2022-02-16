@@ -8,6 +8,7 @@ ngo_management_system
 
 # Author(s)
 1.Adeem Shaik
+
 2.Sai Anish Garapati
 
 # Database description
