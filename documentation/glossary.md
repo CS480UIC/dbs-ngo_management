@@ -41,11 +41,30 @@
 **Description**:
 >resource_usage is an entity that keeps track of usage of resources made by each organization that have taken the resources from the resource_store. This table lets donors see how the donations are being utilized by various organizations.
 
+#### 7.  **Entity Name**: employee
+
+**Synonym**: worker, staff member
+
+**Description**:
+>An employee is a person working in an organization to take care of people residing in an institution. This entity consists of all people employed by the NGO full time and does not include part-time workers or volunteers.
+
+#### 8.  **Entity Name**: donor
+  
+**Synonym**: benefactor, contributor, sponsor
+
+**Description**:
+>A donor is an external entity to the NGO who provides financial support to the NGO or a particular organization that belongs to the NGO. The donor could donate money or provide any other material resources that could help benefit the people in an NGO organization.
+
+
+
 ### (b) For each relationship, determine relationship maxima and minima
 1. organization M(0) - manages - cause M(1)
 2. volunteer M(0) - supports - cause 1(0)
 3. donation 1(0) - stores in - resource_store 1(1)
 4. resource_usage M(0) - takes from - resource_store M(1)
+5. employee M(0) - works in - organization 1(1)
+6. donor 1(0) - makes - donation M(0)
+7. organization M(0) - uses - resource_usage M(0)
 
 ### (c) For each attribute, determine attribute maxima and minima
 #### 1.  **cause Attributes**:
@@ -89,3 +108,26 @@
 >organization_id: M-M(1)  
 >usage_count: M-M(1)  
 
+#### 7.  **employee Attributes**:
+>employee_id: 1-1(1)   
+>first_name: M-1(1)   
+>last_name: M-1(1)   
+>ssn: 1-1(1)   
+>organization_id: M-1(1)   
+>birth_date: M-1(1)   
+>address: 1-1(1)  
+>email: 1-M(0)  
+>phone: 1-M(1)   
+
+ 
+
+#### 8.  **donor Attributes**:
+>donor_id: 1-1(1)  
+>first_name: M-1(1)  
+>last_name: M-1(1)  
+>birth_date: M-1(1)  
+>address: 1-1(1)  
+>email: 1-1(0)   
+>phone: 1-1(1)   
+>num_of_donations: M-1(0)   
+>last_donation: M-1(0)   
