@@ -167,7 +167,7 @@ Attribute Name: Address Type: VARCHAR(75) Description: specifies the address for
 Attribute Name: email Type: VARCHAR(25) Description: Stores the email-id of the organization.   
 Attribute Name: phone Type: CHAR(10) Description:Stores the mobile number of the organization.   
 
->3) Entity: Volunteer   
+>3) Entity: volunteer   
 Attribute Name: volunteer_id Type: INTEGER Description: Uniquely stores the volunteer records in a table.   
 Attribute Name: First_name Type: VARCHAR(20) Description: First name specifies the string for the first name of the volunteer.   
 Attribute Name: last_name Type: VARCHAR(20) Description: The last name specifies the string for the first name of the volunteer.   
