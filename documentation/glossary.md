@@ -72,7 +72,7 @@
 >cause_name: 1-1(1)
 
 #### 2.  **organization Attributes**:
- >organization_id: 1-1(1)  
+>organization_id: 1-1(1)  
 >organization_name: M-1(1)  
 >support_cause_id: M-M(1)  
 >address: 1-1(1)  
@@ -131,3 +131,57 @@
 >phone: 1-1(1)   
 >num_of_donations: M-1(0)   
 >last_donation: M-1(0)   
+
+
+### Document dependent entities and dependency relationships:
+>Dependent entities are cause_organization, volunteer_support_cause, employee, donation, resource_usage, donation_donation_type, resource_store, volunteer, donor   
+
+### Dependency relationships:
+>1) cause_organization depends on cause and organization   
+>2) volunteer_support_cause is supported by volunteer   
+>3) employee belongs to an organization   
+>4) resource_store used by organization   
+>5) volunteer works in organization   
+>6) donor contributes in organization   
+>7) donation made by donor   
+>8) resource_usage made from resource_store   
+>9) resource_usage done by an organization   
+>10) donation_donation_type made type of donation   
+
+### Document supertypes, subtypes and partitions:
+>volunteer is a super type entity of donor entity   
+>volunteer is a super type entity of employee entity   
+
+### Partitions:
+>There are no partitions   
+
+### Implementing attributes:
+>1) Entity: cause   
+Attribute Name: cause_id Type: INTEGER Description: The cause_id specifies the unique id of a cause supported by the NGO.   
+Attribute Name: cause_name Type: varchar(30) Description: This is the name of the cause supported by an organization.   
+
+>2) Entity: organization   
+Attribute Name: organization_id Type: INTEGER Description: each and every organization will be having different and unique id.    
+Attribute Name: organization_name Type: VARCHAR(50) Description: name specifies the string for the organization.    
+Attribute Name: Address Type: VARCHAR(75) Description: specifies the address for the organization.   
+Attribute Name: email Type: VARCHAR(25) Description: Stores the email-id of the organization.   
+Attribute Name: phone Type: CHAR(10) Description:Stores the mobile number of the organization.   
+
+>3) Entity: Volunteer   
+Attribute Name: volunteer_id Type: INTEGER Description: Uniquely stores the volunteer records in a table.   
+Attribute Name: First_name Type: VARCHAR(20) Description: First name specifies the string for the first name of the volunteer.   
+Attribute Name: last_name Type: VARCHAR(20) Description: The last name specifies the string for the first name of the volunteer.   
+Attribute Name: birth_date Type: DATE Description: Specifies the date of birth of the volunteer.   
+Attribute Name: Address Type: VARCHAR(75) Description: specifies the address for the volunteer.   
+Attribute Name: email Type: VARCHAR(20) Description: Stores the email-id of the volunteer.   
+Attribute Name: phone Type: CHAR(10) Description:Stores the mobile number of the volunteer.   
+
+>4) Entity: cause_organization   
+Attribute Name: cause_id Type: INTEGER Description: It specifies the id of a cause being supported by an organization.   
+Attribute Name: organization_id Type: INTEGER Description: It specifies the id of an organization that supports a cause.   
+
+
+
+
+
+
