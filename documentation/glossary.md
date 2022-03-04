@@ -180,8 +180,24 @@ Attribute Name: phone Type: CHAR(10) Description:Stores the mobile number of the
 Attribute Name: cause_id Type: INTEGER Description: It specifies the id of a cause being supported by an organization.   
 Attribute Name: organization_id Type: INTEGER Description: It specifies the id of an organization that supports a cause.   
 
+>5) Entity: donation   
+Attribute Name: transaction_id Type: INTEGER Description: specifies the id of the transaction made for donation.   
+Attribute Name: donor_id Type: INTEGER Description: The donor_id specifies the unique id stored for the donor.   
+Attribute Name: resource_id Type: INTEGER Description: The resource_id specifies the resource_id which is donated.   
+Attribute Name: Time Type:DATETIME: Stores the time at which the donation was made.  
+Attribute Name: amount Type: DECIMAL(10, 2) Description: stores the amount donated by donor.   
+
+>6) Entity: resource_store   
+Attribute Name: resource_id Type: INTEGER Description: The resource_id specifies the unique id of the donation stored in the inventory.   
+Attribute Name: name Type: VARCHAR(30) Description: The resource name specifies the name of the items donated.   
+Attribute Name: type_name Type:varchar(20)  Description: This describes the type of the resource stored in the inventory.   
+Attribute Name: resource_count Type:DECIMAL(10, 2) Description: This describes the amount of resource available in the inventory.   
 
 
-
+>7) Entity: resource_usage   
+Attribute Name: usage_id Type: INTEGER Description: This specifies the unique usage id made by an organization.   
+Attribute Name: resource_id Type: INTEGER Description: This specifies the resource id that was used by an organization.    
+Attribute Name: organization_id Type: INTEGER Description: This describes the organization id that made usage of a particular resource.   
+Attribute Name: usage_count Type: INTEGER Description: This describes the amount of resource used by an organization.   
 
 
