@@ -153,7 +153,28 @@
 >volunteer is a super type entity of employee entity   
 
 ### Partitions:
->There are no partitions   
+>There are no partitions  
+
+### Specify cascade and restrict actions for dependency relationships:   
+
+>organization on delete employee cascade.  
+organization on delete resource_store cascade   
+organization on delete volunteer cascade.  
+organization on delete donor cascade.  
+
+### cascade and restrict rules on foreign keys that implement dependency relationships:   
+
+>cause_organization [cause_id(FK)] -> cause [cause_id(PK)] on delete cascade.  
+cause_organization [organization_id(FK)] -> organization[organization_id(PK)] on delete cascade.  
+volunteer_support_cause[volunteer_id(FK)] -> volunteer[volunteer_id(PK)] on delete cascade.  
+employee[organization_id(FK)] -> organization[organization_id(PK)] on delete set null.  
+donation[donor_id(FK)] -> donor[donor_id(PK)] on delete set null.  
+resource_usage[resource_id(FK)] -> resource_store[resource_id(PK)] on delete set null.  
+resource_usage[organization_id(FK)] -> organization[organization_id(PK)] on delete set null.  
+donation_donation_type[transaction_id(FK)] -> donation[transaction_id(FK)] on delete cascade.  
+donation[resource_id(FK)] -> resource_store[resource_id(PK)] on delete set null.  
+donation[organization_id(FK)] -> organization[organization_id(PK)] on delete set null.  
+
 
 ### Implementing attributes:
 >1) Entity: cause   
@@ -199,5 +220,45 @@ Attribute Name: usage_id Type: INTEGER Description: This specifies the unique us
 Attribute Name: resource_id Type: INTEGER Description: This specifies the resource id that was used by an organization.    
 Attribute Name: organization_id Type: INTEGER Description: This describes the organization id that made usage of a particular resource.   
 Attribute Name: usage_count Type: INTEGER Description: This describes the amount of resource used by an organization.   
+
+>8) Entity: donor.  
+Attribute Name: donor_id Type: INTEGER Description: Uniquely stores the donor id of a record in a table.  
+Attribute Name: First_name Type: VARCHAR(20) Description: First name specifies the string for the first name of the donor.   
+Attribute Name: last_name Type: VARCHAR(20) Description: The last name specifies the string for the last name of the donor.   
+Attribute Name: birth_date Type: DATE Description: Specifies the date of birth of the donor.   
+Attribute Name: Address Type: VARCHAR(75) Description: specifies the address for the donor.  
+Attribute Name: email Type: VARCHAR(25) Description: Stores the email-id of the donor.   
+Attribute Name: phone Type: CHAR(10) Description:Stores the mobile number of the donor.   
+Attribute Name: num_of_donations Type: INTEGER Description:Stores the  number of donations made by the donor before signing up for this NGO.  
+Attribute Name: last_donation Type: DATE Description:Stores the date of last donation made by the donor before signing up for this NGO.  
+
+>9) Entity: employee.  
+Attribute Name: employee_id Type: INTEGER Description: Uniquely stores the employee id in employee records of a table.  
+Attribute Name: First_name Type: VARCHAR(20) Description: First name specifies the string for the first name of the employee.   
+Attribute Name: last_name Type: VARCHAR(20) Description: The last name specifies the string for the first name of the employee.   
+Attribute Name: ssn Type: CHAR(10) Description:Stores the social security number of the employee.   
+Attribute Name: organization_id Type: INTEGER Description:Stores the organization to which an employee belongs.   
+Attribute Name: birth_date Type: DATE Description: Specifies the date of birth of the employee.   
+Attribute Name: Address Type: VARCHAR(75) Description: specifies the address for the employee.   
+Attribute Name: email Type: VARCHAR(25) Description: Stores the email-id of the employee.   
+Attribute Name: phone Type: CHAR(10) Description:Stores the mobile number of the employee.  
+
+>10) Entity: volunteer_support_cause.  
+Attribute Name: volunteer_id Type: INTEGER Description: This describes the id of a volunteer that would want to provide support for a cause.  
+Attribute Name: support_cause_id Type: INTEGER Description: This describes the id of a cause which is being supported by a volunteer.  
+
+>11) Entity: donation_donation_type.  
+Attribute Name: transaction_id Type: INTEGER Description: This specifies the id of a transaction which is done for a specific donation type.   
+Attribute Name: donation_type Type: VARCHAR(20) Description: This specifies the donation_type in which donation is made for a transaction_id.   
+
+### Handling plural attributes:   
+> Entity: volunteer, Attribute: support_cause_id.  
+A volunteer can choose to support multiple causes, which makes it a plural attribute. This was handled by creating a new dependent table volunteer_support_cause.    with composite primary key (volunteer_id, support_cause_id) which also act as foreign keys to entities volunteer and cause respectively.  
+
+> Entity: donation, Attribute: donation_type.  
+A donation transaction can include multiple types of donation, which makes it a plural attribute. This was handled by creating a new dependent table.    donation_donation_type with composite primary key (transaction_id, donation_type) and transaction_id acts as a foreign key to the donation entity.   
+
+
+
 
 
