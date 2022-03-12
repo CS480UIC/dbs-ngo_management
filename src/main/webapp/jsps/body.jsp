@@ -22,7 +22,6 @@
   </head>
   
   <body>
-    <h1>Welcome to the demo</h1>
     
   </body>
 </html>
