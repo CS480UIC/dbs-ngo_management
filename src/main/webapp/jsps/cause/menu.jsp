@@ -24,10 +24,10 @@
   <body>
     <h1>CRUD operations for cause </h1>
     <br>
-	<a href="<c:url value='/jsps/cause/causecreate.jsp'/>" target="_parent">Create Cause</a> |&nbsp; 
-	<a href="<c:url value='/jsps/cause/causeread.jsp'/>" target="_parent">Read Cause</a> |&nbsp;
-	<a href="<c:url value='/jsps/cause/causeupdate.jsp'/>" target="_parent">Update Cause</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/cause/causedelete.jsp'/>" target="_parent">Delete Cause</a>	
+	<a href="<c:url value='/jsps/cause/causecreate.jsp'/>" target="_parent">Create cause</a> |&nbsp; 
+	<a href="<c:url value='/jsps/cause/causeread.jsp'/>" target="_parent">Read cause</a> |&nbsp;
+	<a href="<c:url value='/jsps/cause/causeupdate.jsp'/>" target="_parent">Update cause</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/cause/causedelete.jsp'/>" target="_parent">Delete cause</a>	
 	    
   </body>
 </html>

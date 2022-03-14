@@ -29,7 +29,7 @@
 	cause_name：<input type="text" name="cause_name" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	<input type="submit" value="Create Cause"/>
+	<input type="submit" value="Create cause"/>
 </form>
   </body>
 </html>
