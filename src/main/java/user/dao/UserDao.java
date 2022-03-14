@@ -21,12 +21,12 @@ public class UserDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "test";  //TODO change user
+	private String MySQL_user = "ngo_management_system";  //TODO change user
 	
 	/**
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "12345678";  //TODO change password
+	private String MySQL_password = "s_cube";  //TODO change password
 	
 	/**
 	 * get the Search result with Username 
