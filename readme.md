@@ -40,3 +40,17 @@ The interface created to support the CRUD operations for this database will allo
 ![Alt text](/screenshots/volunteer_read.png?raw=true)
 ![Alt text](/screenshots/volunteer_update.png?raw=true)
 ![Alt text](/screenshots/volunteer_delete.png?raw=true)
+
+## CRUD for donor
+![Alt text](/screenshots/donor_menu.png?raw=true)
+![Alt text](/screenshots/donor_create.png?raw=true)
+![Alt text](/screenshots/donor_read.png?raw=true)
+![Alt text](/screenshots/donor_update.png?raw=true)
+![Alt text](/screenshots/donor_delete.png?raw=true)
+
+## CRUD for employee
+![Alt text](/screenshots/employee_menu.png?raw=true)
+![Alt text](/screenshots/employee_create.png?raw=true)
+![Alt text](/screenshots/employee_read.png?raw=true)
+![Alt text](/screenshots/employee_update.png?raw=true)
+![Alt text](/screenshots/employee_delete.png?raw=true)
