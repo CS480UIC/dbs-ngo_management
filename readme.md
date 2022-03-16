@@ -54,3 +54,25 @@ The interface created to support the CRUD operations for this database will allo
 ![Alt text](/screenshots/employee_read.png?raw=true)
 ![Alt text](/screenshots/employee_update.png?raw=true)
 ![Alt text](/screenshots/employee_delete.png?raw=true)
+
+## CRUD for donation
+![Alt text](/screenshots/donationMenu.png?raw=true)
+![Alt text](/screenshots/donationCreate.png?raw=true)
+![Alt text](/screenshots/donationRead.PNG?raw=true)
+![Alt text](/screenshots/donationUpdate.PNG?raw=true)
+![Alt text](/screenshots/donationDelete.PNG?raw=true)
+
+## CRUD for resource_store
+![Alt text](/screenshots/resource_storeMenu.PNG?raw=true)
+![Alt text](/screenshots/resource_storeCreate.PNG?raw=true)
+![Alt text](/screenshots/resource_storeRead.PNG?raw=true)
+![Alt text](/screenshots/resource_storeUpdate.PNG?raw=true)
+![Alt text](/screenshots/resource_storeDelete.PNG?raw=true)
+
+## CRUD for resource_usage
+![Alt text](/screenshots/resource_usageMenu.PNG?raw=true)
+![Alt text](/screenshots/resource_usageCreate.PNG?raw=true)
+![Alt text](/screenshots/resource_usageRead.PNG?raw=true)
+![Alt text](/screenshots/resource_usageUpdate.PNG?raw=true)
+![Alt text](/screenshots/resource_usageDelete.PNG?raw=true)
+
