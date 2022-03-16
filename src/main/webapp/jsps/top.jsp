@@ -48,7 +48,9 @@
 			<a href="<c:url value='/jsps/volunteer/menu.jsp'/>" target="body">CRUD volunteer</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/donor/menu.jsp'/>" target="body">CRUD donor</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/employee/menu.jsp'/>" target="body">CRUD employee</a> |&nbsp;&nbsp;
-
+			<a href="<c:url value='/jsps/donation/menu.jsp'/>" target="body">CRUD donation</a> |&nbsp;&nbsp;  
+			<a href="<c:url value='/jsps/resource_store/menu.jsp'/>" target="body">CRUD resource_store</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/resource_usage/menu.jsp'/>" target="body">CRUD resource_usage</a> |&nbsp;&nbsp;
 		</c:otherwise>
 	</c:choose>
 
