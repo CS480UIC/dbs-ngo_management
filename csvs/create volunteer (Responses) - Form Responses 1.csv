@@ -1,0 +1,6 @@
+Timestamp,volunteer_id,first_name,last_name,birth_date,address,email,phone
+3/3/2022 18:20,1,Dickens,Bruce,1978-11-10,"152 Zelma Meadows Suite 983 New Idellfurt, KS 95384",dickens.bruce@gmail.com,2124942383
+3/3/2022 18:21,2,Heathcote,Velma,1984-09-12,NULL,NULL,NULL
+3/3/2022 18:22,3,Stroman,Boyd,NULL,"2879 Keshawn Mills Apt. 617 Dietrichtown, ME 11898",NULL,NULL
+3/3/2022 18:23,4,Kerluke,Reyes,1975-11-28,"61591 Cummings Radial Apt. 524 Funkmouth, UT 15727-0980",kerluke.reyes@gmail.com,4106655994
+3/3/2022 18:25,5,Crooks,Alize,1996-01-17,"660 Velda Ramp Apt. 114 Hilpertfort, IL 43711-5684",crooks.alize@gmail.com,3016966307
