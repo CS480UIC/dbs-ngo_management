@@ -1,4 +1,4 @@
-package cause_organization.web.servlet;
+package cause.web.servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,22 +11,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import cause_organization.domain.Cause_organization;
-import cause_organization.service.Cause_organizationException;
-import cause_organization.service.Cause_organizationService;
+import cause.domain.Cause;
+import cause.service.CauseException;
+import cause.service.CauseService;
 
 
 /**
  * Servlet implementation class UserServlet
  */
 
-public class Cause_organizationServletCreate extends HttpServlet {
+public class CauseServletCreate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Cause_organizationServletCreate() {
+    public CauseServletCreate() {
         super();
     }
 
@@ -41,9 +41,9 @@ public class Cause_organizationServletCreate extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Cause_organizationService entity1service = new Cause_organizationService();
+		CauseService entity1service = new CauseService();
 		Map<String,String[]> paramMap = request.getParameterMap();
-		Cause_organization form = new Cause_organization();
+		Cause form = new Cause();
 		List<String> info = new ArrayList<String>();
 
 		for(String name : paramMap.keySet()) {
@@ -51,13 +51,15 @@ public class Cause_organizationServletCreate extends HttpServlet {
 			info.add(values[0]);
 		}
 		form.setCause_id(Integer.parseInt(info.get(0)));
-		form.setOrganization_id(Integer.parseInt(info.get(1)));
+		form.setCause_name(info.get(1));
+		form.setCause_supported(info.get(2));
+		form.setCause_funds_raised(Float.parseFloat(info.get(3)));
 		
 		try {
 			entity1service.create(form);
 			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
 			
-		} catch (ClassNotFoundException | Cause_organizationException e) {
+		} catch (ClassNotFoundException | CauseException e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {
 			e.printStackTrace();

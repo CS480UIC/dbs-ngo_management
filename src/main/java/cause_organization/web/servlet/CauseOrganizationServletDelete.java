@@ -6,21 +6,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import cause_organization.dao.Cause_organizationDao;
-import cause_organization.domain.Cause_organization;
+import cause_organization.dao.CauseOrganizationDao;
+import cause_organization.domain.CauseOrganization;
 
 
 /**
  * Servlet implementation class UserServlet
  */
 
-public class Cause_organizationServletDelete extends HttpServlet {
+public class CauseOrganizationServletDelete extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Cause_organizationServletDelete() {
+    public CauseOrganizationServletDelete() {
         super();
     }
     
@@ -36,12 +36,12 @@ public class Cause_organizationServletDelete extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String method = request.getParameter("method");
-		Cause_organizationDao cause_organizationDao = new Cause_organizationDao();
-		Cause_organization cause_organization = null;
+		CauseOrganizationDao cause_organizationDao = new CauseOrganizationDao();
+		CauseOrganization cause_organization = null;
 		if(method.equals("search"))
 		{
 			try {
-				cause_organization = cause_organizationDao.findByCause_organizationId(Integer.parseInt(request.getParameter("cause_id")), Integer.parseInt(request.getParameter("organization_id")));
+				cause_organization = cause_organizationDao.findByCauseOrganizationId(Integer.parseInt(request.getParameter("cause_id")), Integer.parseInt(request.getParameter("organization_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -56,7 +56,7 @@ public class Cause_organizationServletDelete extends HttpServlet {
 						request.getRequestDispatcher("/jsps/cause_organization/cause_organization_delete_output.jsp").forward(request, response);			
 				}
 				else{
-				request.setAttribute("msg", "Cause_organization not found");
+				request.setAttribute("msg", "CauseOrganization not found");
 				request.getRequestDispatcher("/jsps/cause_organization/cause_organization_read_output.jsp").forward(request, response);
 			}
 		}
@@ -71,7 +71,7 @@ public class Cause_organizationServletDelete extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Cause_organization Deleted");
+			request.setAttribute("msg", "CauseOrganization Deleted");
 			request.getRequestDispatcher("/jsps/cause_organization/cause_organization_read_output.jsp").forward(request, response);
 		}
 	}

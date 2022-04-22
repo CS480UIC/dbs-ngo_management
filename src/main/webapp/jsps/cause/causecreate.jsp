@@ -22,13 +22,19 @@
   
   <body>
   <h1>cause Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	cause_id    :<input type="text" name="cause_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/CauseServletCreate'/>" method="post">
+	cause_id    :<input type="text" name="cause_id" value="${form.cause_id }"/>
+	<span style="color: red; font-weight: 900">${errors.cause_id }</span>
 	<br/>
-	cause_name：<input type="text" name="cause_name" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	cause_name：<input type="text" name="cause_name" value="${form.cause_name }"/>
+	<span style="color: red; font-weight: 900">${errors.cause_name }</span>
 	<br/>
+	cause_supported：<input type="text" name="cause_supported" value="${form.cause_supported }"/>
+	<span style="color: red; font-weight: 900">${errors.cause_supported }</span>
+	<br/>
+	cause_funds_raised：<input type="text" name="cause_funds_raised" value="${form.cause_funds_raised }"/>
+	<span style="color: red; font-weight: 900">${errors.cause_funds_raised }</span>
+	<br/>	
 	<input type="submit" value="Create cause"/>
 </form>
   </body>

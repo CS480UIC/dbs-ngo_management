@@ -6,7 +6,7 @@ package cause_organization.domain;
  * @author Aayush Makharia
  * 
  */
-public class Cause_organization {
+public class CauseOrganization {
 	/*
 	 * Correspond to the user table
 	 */
@@ -32,6 +32,6 @@ public class Cause_organization {
 
 	@Override
 	public String toString() {
-		return "Cause_organization [cause_id=" + cause_id + ", organization_id=" + organization_id + "]";
+		return "CauseOrganization [cause_id=" + cause_id + ", organization_id=" + organization_id + "]";
 	}
 }

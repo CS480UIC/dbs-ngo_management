@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Cause</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,20 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Cause</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/CauseServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	<input type="hidden" name="cause_id" value="${cause.cause_id }"/>
+	cause_id    :<input type="text" name="cause_id" value="${cause.cause_id }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	cause_name：<input type="text" name="cause_name" value="${cause.cause_name }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	cause_supported	：<input type="text" name="cause_supported" value="${cause.cause_supported }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	cause_funds_raised	：<input type="text" name="cause_funds_raised" value="${cause.cause_funds_raised }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Cause"/>
 </form>
 
 </body>

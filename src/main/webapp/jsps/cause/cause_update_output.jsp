@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Cause</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,28 +21,33 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Cause</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	cause_id    :<input type="text" name="cause_id1" value="${cause.cause_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	cause_name：<input type="text" name="cause_name1" value="${cause.cause_name }" disabled />
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	cause_supported	：<input type="text" name="cause_supported1" value="${cause.cause_supported }" disabled/>
+	<br/>
+	cause_funds_raised	：<input type="text" name="cause_funds_raised1" value="${cause.cause_funds_raised }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/CauseServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+				<input type="hidden" name="cause_id" value="${cause.cause_id }"/>
+	cause_name：<input type="text" name="cause_name" value="${form.cause_name }"/>
+	<span style="color: red; font-weight: 900">${errors.cause_name }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	cause_supported	：<input type="text" name="cause_supported" value="${form.cause_supported }"/>
+	<span style="color: red; font-weight: 900">${errors.cause_supported }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	cause_funds_raised	：<input type="text" name="cause_funds_raised" value="${form.cause_funds_raised }"/>
+	<span style="color: red; font-weight: 900">${errors.cause_funds_raised }</span>
+	<br/>
+	<input type="submit" value="Update Cause"/>
 </form>
 
 </body>

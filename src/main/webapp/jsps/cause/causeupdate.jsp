@@ -22,10 +22,10 @@
   
   <body>
   <h1>Update cause</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/CauseServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update cause_name :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Update cause_id :<input type="text" name="cause_id" value="${form.cause_id }"/>
+	<span style="color: red; font-weight: 900">${errors.cause_id }</span>
 	<br/>
 	<input type="submit" value="Update cause"/>
 </form>

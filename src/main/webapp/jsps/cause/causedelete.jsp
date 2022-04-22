@@ -22,10 +22,10 @@
   
   <body>
   <h1>Delete cause</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/CauseServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete cause_name   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete cause_id   :<input type="text" name="cause_id" value="${form.cause_id }"/>
+	<span style="color: red; font-weight: 900">${errors.cause_id }</span>
 	<br/>
 	<input type="submit" value="Delete cause"/>
 </form>
