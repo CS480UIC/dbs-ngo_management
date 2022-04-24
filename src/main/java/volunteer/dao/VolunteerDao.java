@@ -139,5 +139,27 @@ public class VolunteerDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
-	}	
+	}
+	
+	public List<Object> findVolunteers() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
+			String sql = "select volunteer_id, first_name from volunteer where birth_date <= \"1980-01-01\"";
+			PreparedStatement preparestatement = connect.prepareStatement(sql);
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Volunteer volunteer = new Volunteer();
+				volunteer.setVolunteer_id(Integer.parseInt(resultSet.getString("volunteer_id")));
+				volunteer.setFirst_name(resultSet.getString("first_name"));
+				list.add(volunteer);
+			}
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+
+	}
 }

@@ -27,4 +27,8 @@ public class VolunteerService {
 		if(volunteer.getVolunteer_id()!= null && volunteer.getVolunteer_id() == form.getVolunteer_id()) throw new VolunteerException("This volunteer name has been registered before!");
 		volunteerDao.add(form);
 	}
+	
+	public List<Object> findVolunteers() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return volunteerDao.findVolunteers();	
+	}
 }
