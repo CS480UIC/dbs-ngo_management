@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Organization Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,18 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Organization Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	organization_id    :<input type="text" name="organization_id" value="${organization.organization_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	organization_name：<input type="text" name="organization_name" value="${organization.organization_name }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	address：<input type="text" name="address" value="${organization.address }" disabled/>
+	<br/>
+	email	：<input type="text" name="email" value="${organization.email }" disabled/>
+	<br/>
+	phone	：<input type="text" name="phone" value="${organization.phone }" disabled/>
 	<br/>
 </form>
 

@@ -22,21 +22,21 @@
   
   <body>
   <h1>organization Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	organization_name    :<input type="text" name="organization_name" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/OrganizationServletCreate'/>" method="post">
+	organization_id    :<input type="text" name="organization_id" value="${form.organization_id }"/>
+	<span style="color: red; font-weight: 900">${errors.organization_id }</span>
 	<br/>
-	address ： <input type="text" name="address" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	organization_name    :<input type="text" name="organization_name" value="${form.organization_name }"/>
+	<span style="color: red; font-weight: 900">${errors.organization_name }</span>
+	<br/>
+	address ： <input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
 	<br/>
 	email ： <input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	phone ： <input type="text" name="phone" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/>
-	cause_id ： <input type="text" name="cause_id" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	phone ： <input type="text" name="phone" value="${form.phone }"/>
+	<span style="color: red; font-weight: 900">${errors.phone }</span>
 	<br/>
 	<input type="submit" value="Create organization"/>
 </form>

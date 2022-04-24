@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read organization</title>
+    <title>Read Organization</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,12 +21,12 @@
   </head>
   
   <body>
-  <h1>Read organization</h1>
+  <h1>Read Organization</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/OrganizationServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	organization_id    :<input type="text" name="organization_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	organization_id    :<input type="text" name="organization_id" value="${form.organization_id }"/>
+	<span style="color: red; font-weight: 900">${errors.organization_id }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
@@ -34,7 +34,7 @@
 	Email	：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/> --%>
-	<input type="submit" value="Read organization"/>
+	<input type="submit" value="Read Organization"/>
 </form>
   </body>
 </html>
