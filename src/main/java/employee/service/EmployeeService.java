@@ -27,4 +27,9 @@ public class EmployeeService {
 		if(employee.getEmployee_id()!= null && employee.getEmployee_id() == form.getEmployee_id()) throw new EmployeeException("This employee name has been registered before!");
 		employeeDao.add(form);
 	}
+	
+	public List<Object> findEmployees() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return employeeDao.findEmployees();
+		
+	}
 }
