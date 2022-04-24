@@ -51,6 +51,9 @@
 			<a href="<c:url value='/jsps/donation/menu.jsp'/>" target="body">CRUD donation</a> |&nbsp;&nbsp;  
 			<a href="<c:url value='/jsps/resource_store/menu.jsp'/>" target="body">CRUD resource_store</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/resource_usage/menu.jsp'/>" target="body">CRUD resource_usage</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/volunteer_support_cause/menu.jsp'/>" target="body">CRUD volunteer_support_cause</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/cause_organization/menu.jsp'/>" target="body">CRUD cause_organization</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/donation_donation_type/menu.jsp'/>" target="body">CRUD donation_donation_type</a> |&nbsp;&nbsp;		
 		</c:otherwise>
 	</c:choose>
 
