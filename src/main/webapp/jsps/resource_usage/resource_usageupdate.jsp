@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update resource_usage</title>
+    <title>Update Resource_usage</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,13 @@
   </head>
   
   <body>
-  <h1>Update resource_usage</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+  <h1>Update Resource_usage</h1>
+<form action="<c:url value='/Resource_usageServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update usage_id   :<input type="text" name="usage_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Update usage_id   :<input type="text" name="usage_id" value="${form.usage_id }"/>
+	<span style="color: red; font-weight: 900">${errors.usage_id }</span>
 	<br/>
-	<input type="submit" value="Update resource_usage"/>
+	<input type="submit" value="Update Resource_usage"/>
 </form>
   </body>
 </html>

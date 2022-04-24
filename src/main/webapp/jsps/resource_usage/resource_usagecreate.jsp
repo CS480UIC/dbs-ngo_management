@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 resource_usage</title>
+    <title>Create resource_usage</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,18 +21,21 @@
   </head>
   
   <body>
-  <h1>Entity1 resource_usage</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	resource_id : <input type="text" name="resource_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  <h1>Create resource_usage</h1>
+<form action="<c:url value='/Resource_usageServletCreate'/>" method="post">
+	usage_id : <input type="text" name="usage_id" value="${form.usage_id }"/>
+	<span style="color: red; font-weight: 900">${errors.usage_id }</span>
 	<br/>
-	organization_id ： <input type="text" name="organization_id" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	resource_id : <input type="text" name="resource_id" value="${form.resource_id }"/>
+	<span style="color: red; font-weight: 900">${errors.resource_id }</span>
 	<br/>
-	usage_count	: <input type="text" name="usage_count" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	organization_id ： <input type="text" name="organization_id" value="${form.organization_id }"/>
+	<span style="color: red; font-weight: 900">${errors.organization_id }</span>
 	<br/>
-	<input type="submit" value="Create resource_usage"/>
+	usage_count	: <input type="text" name="usage_count" value="${form.usage_count }"/>
+	<span style="color: red; font-weight: 900">${errors.usage_count }</span>
+	<br/>
+	<input type="submit" value="Create Resource_usage"/>
 </form>
   </body>
 </html>

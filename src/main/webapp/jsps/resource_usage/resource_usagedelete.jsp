@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete resource_usage</title>
+    <title>Delete Resource_usage</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,13 @@
   </head>
   
   <body>
-  <h1>Delete resource_usage</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+  <h1>Delete Resource_usage</h1>
+<form action="<c:url value='/Resource_usageServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete usage_id : <input type="text" name="usage_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete usage_id : <input type="text" name="usage_id" value="${form.usage_id }"/>
+	<span style="color: red; font-weight: 900">${errors.usage_id }</span>
 	<br/>
-	<input type="submit" value="Delete resource_usage"/>
+	<input type="submit" value="Delete Resource_usage"/>
 </form>
   </body>
 </html>

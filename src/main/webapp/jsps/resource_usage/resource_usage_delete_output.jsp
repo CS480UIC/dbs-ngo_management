@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Resource_usage</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,21 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Resource_usage</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/Resource_usageServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="usage_id" value="${resource_usage.usage_id }"/>
+	usage_id    :<input type="text" name="usage_id" value="${resource_usage.usage_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	resource_id：<input type="text" name="resource_id" value="${resource_usage.resource_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	organization_id	：<input type="text" name="organization_id" value="${resource_usage.organization_id }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	usage_count	：<input type="text" name="usage_count" value="${resource_usage.usage_count }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Resource_usage"/>
 </form>
 
 </body>
