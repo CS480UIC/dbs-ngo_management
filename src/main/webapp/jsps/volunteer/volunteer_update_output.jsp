@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Volunteer</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,28 +21,47 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Volunteer</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	volunteer_id    :<input type="text" name="volunteer_id" value="${volunteer.volunteer_id }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	first_name：<input type="text" name="first_name" value="${volunteer.first_name }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	last_name	：<input type="text" name="last_name" value="${volunteer.last_name }" disabled/>
+	<br/>
+	birth_date：<input type="text" name="birth_date" value="${volunteer.birth_date }" disabled/>
+	<br/>
+	address	：<input type="text" name="address" value="${volunteer.address }" disabled/>
+	<br/>
+	email	：<input type="text" name="email" value="${volunteer.email }" disabled/>
+	<br/>
+	phone	：<input type="text" name="phone" value="${volunteer.phone }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/VolunteerServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+				<input type="hidden" name="volunteer_id" value="${volunteer.volunteer_id }"/>
+	first_name   : <input type="text" name="first_name" value="${form.first_name }"/>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
+	last_name ： <input type="last_name" name="last_name" value="${form.last_name }"/>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
+	<br/>
+	birth_date	： <input type="text" name="birth_date" value="${form.birth_date }"/>
+	<span style="color: red; font-weight: 900">${errors.birth_date }</span>
+	<br/>
+	address	： <input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
+	<br/>
+	email	： <input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	phone	： <input type="text" name="phone" value="${form.phone }"/>
+	<span style="color: red; font-weight: 900">${errors.phone }</span>
+	<br/>
+	<input type="submit" value="Update Volunteer"/>
 </form>
 
 </body>

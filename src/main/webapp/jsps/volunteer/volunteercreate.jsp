@@ -22,27 +22,27 @@
   
   <body>
   <h1>volunteer Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	first_name : <input type="text" name="first_name" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/VolunteerServletCreate'/>" method="post">
+	volunteer_id : <input type="text" name="volunteer_id" value="${form.volunteer_id }"/>
+	<span style="color: red; font-weight: 900">${errors.volunteer_id }</span>
 	<br/>
-	last_name ： <input type="text" name="last_name" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	first_name : <input type="text" name="first_name" value="${form.first_name }"/>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
 	<br/>
-	birth_date ： <input type="text" name="birth_date" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	last_name ： <input type="text" name="last_name" value="${form.last_name }"/>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
 	<br/>
-	address ： <input type="text" name="address" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	birth_date ： <input type="text" name="birth_date" value="${form.birth_date }"/>
+	<span style="color: red; font-weight: 900">${errors.birth_date }</span>
+	<br/>
+	address ： <input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
 	<br/>
 	email ： <input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	phone ： <input type="text" name="phone" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/>
-	support_cause ： <input type="text" name="support_cause" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	phone ： <input type="text" name="phone" value="${form.phone }"/>
+	<span style="color: red; font-weight: 900">${errors.phone }</span>
 	<br/>
 	<input type="submit" value="Create volunteer"/>
 </form>
