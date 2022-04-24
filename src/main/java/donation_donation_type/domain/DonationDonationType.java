@@ -3,7 +3,7 @@ package donation_donation_type.domain;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ *
  * 
  */
 public class DonationDonationType {

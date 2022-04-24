@@ -3,7 +3,7 @@ package volunteer_support_cause.domain;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ *
  * 
  */
 public class VolunteerSupportCause {

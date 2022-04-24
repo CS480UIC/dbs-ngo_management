@@ -8,7 +8,7 @@ import employee.domain.Employee;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class EmployeeService {

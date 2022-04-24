@@ -6,7 +6,7 @@ import volunteer_support_cause.domain.VolunteerSupportCause;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class VolunteerSupportCauseService {

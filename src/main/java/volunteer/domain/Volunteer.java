@@ -3,7 +3,7 @@ package volunteer.domain;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ *
  * 
  */
 public class Volunteer {

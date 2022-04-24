@@ -6,7 +6,7 @@ import donation_donation_type.domain.DonationDonationType;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class DonationDonationTypeService {

@@ -8,7 +8,7 @@ import volunteer.domain.Volunteer;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class VolunteerService {

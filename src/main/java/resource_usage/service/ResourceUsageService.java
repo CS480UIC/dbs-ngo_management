@@ -6,7 +6,7 @@ import resource_usage.domain.ResourceUsage;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class ResourceUsageService {

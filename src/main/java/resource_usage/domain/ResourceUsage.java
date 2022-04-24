@@ -3,7 +3,7 @@ package resource_usage.domain;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ *
  * 
  */
 public class ResourceUsage {
