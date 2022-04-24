@@ -32,4 +32,9 @@ public class EmployeeService {
 		return employeeDao.findEmployees();
 		
 	}
+
+	public List<Object> findExpense() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return employeeDao.findExpense();
+
+	}
 }
