@@ -85,7 +85,7 @@ ENGINE = InnoDB;
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES (1,'Hackett','Jayme','2644215841',4,50000,'1973-04-27','16916 Skyla Keys Suite 732 Greenfeldermouth, FL 63280','hackett.jayme@gmail.com','2145813674'),(2,'Padberg','Hilton','5742958631',5,20000,'1978-01-25','348 Titus Centers O\'Connerton, AK 64000-6389','padberg.hilton@gmail.com	','3017975249'),(3,'Feil','Elijah','4238208831',1,40000,'1975-08-14','57759 Fadel Squares Augustton, AL 38014-7835','feil.elijah@gmail.com	','3192368374'),(4,'Strosin','Autumn','5253168841',2,35000,'1982-05-05','28187 Rick Neck Crooksberg, NM 59051','strosin.autumn@gmail.com','6623061396'),(5,'Kulas','Yazmin','4192690911',3,55000,'1980-02-15','937 Hartmann Knolls New Rosalee, CT 11502','kulas.yazmin@gmail.com','4077193097');
+INSERT INTO `employee` VALUES (1,'Hackett','Jayme','2644215841',4,50000,'1973-04-27','16916 Skyla Keys Suite 732 Chicago, FL 63280','hackett.jayme@gmail.com','2145813674'),(2,'Padberg','Hilton','5742958631',5,20000,'1978-01-25','348 Titus Centers O\'Connerton, AK 64000-6389','padberg.hilton@gmail.com	','3017975249'),(3,'Feil','Elijah','4238208831',1,40000,'1975-08-14','57759 Fadel Squares Chicago, AL 38014-7835','feil.elijah@gmail.com	','3192368374'),(4,'Strosin','Autumn','5253168841',2,35000,'1982-05-05','28187 Rick Neck Crooksberg, NM 59051','strosin.autumn@gmail.com','6623061396'),(5,'Kulas','Yazmin','4192690911',3,55000,'1980-02-15','937 Hartmann Knolls Chicago, CT 11502','kulas.yazmin@gmail.com','4077193097');
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
