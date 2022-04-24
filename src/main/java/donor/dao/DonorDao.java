@@ -166,4 +166,35 @@ public class DonorDao {
 		return list;
 
 	}
+	
+	public List<Object> findDonorsTime() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
+			String sql = "create or replace view donate_time as\\r\\n"
+					+ "select d.first_name, d.last_name \\r\\n"
+					+ "from donor as d\\r\\n"
+					+ "where exists (select n.donor_id\\r\\n"
+					+ "			  from donation as n\\r\\n"
+					+ "			  where d.donor_id=n.donor_id\\r\\n"
+					+ "	          and time < '2022-02-03 05:00:00')";
+			PreparedStatement preparestatement = connect.prepareStatement(sql);
+			preparestatement.executeUpdate();
+			sql = "SELECT * FROM donate_time";
+			preparestatement = connect.prepareStatement(sql);
+			ResultSet resultSet = preparestatement.executeQuery();
+			while(resultSet.next()){
+				Donor donor = new Donor();
+				donor.setFirst_name(resultSet.getString("first_name"));
+				donor.setLast_name(resultSet.getString("last_name"));
+	    		list.add(donor);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+
+	}
 }

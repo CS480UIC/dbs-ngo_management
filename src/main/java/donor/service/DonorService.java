@@ -31,4 +31,8 @@ public class DonorService {
 	public List<Object> findNumberDonations() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
 		return donorDao.findNumberDonations();	
 	}
+	
+	public List<Object> findDonorsTime() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return donorDao.findDonorsTime();
+	}
 }
