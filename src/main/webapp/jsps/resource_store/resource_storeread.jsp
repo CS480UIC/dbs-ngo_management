@@ -23,10 +23,10 @@
   <body>
   <h1>Read resource_store</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/Resource_storeServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	resource_id    :<input type="text" name="resource_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	resource_id    :<input type="text" name="resource_id" value="${form.resource_id }"/>
+	<span style="color: red; font-weight: 900">${errors.resource_id }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>

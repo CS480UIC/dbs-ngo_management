@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Resource_store Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,16 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Resource_store Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	resource_id    :<input type="text" name="resource_id" value="${resource_store.resource_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	name：<input type="text" name="name" value="${resource_store.name }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	type_name	：<input type="text" name="type_name" value="${resource_store.type_name }" disabled/>
+	<br/>
+	resource_count	：<input type="text" name="resource_count" value="${resource_store.resource_count }" disabled/>
 	<br/>
 </form>
 

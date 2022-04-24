@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 resource_store</title>
+    <title>Create resource_store</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,16 +21,19 @@
   </head>
   
   <body>
-  <h1>Entity1 resource_store</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	resource_name : <input type="text" name="resource_name" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  <h1>Create resource_store</h1>
+<form action="<c:url value='/Resource_storeServletCreate'/>" method="post">
+	resource_id : <input type="text" name="resource_id" value="${form.resource_id }"/>
+	<span style="color: red; font-weight: 900">${errors.resource_id }</span>
 	<br/>
-	type_name ： <input type="text" name="type_name" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	name : <input type="text" name="name" value="${form.name }"/>
+	<span style="color: red; font-weight: 900">${errors.name }</span>
 	<br/>
-	resource_count	：<input type="text" name="resource_count" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	type_name ： <input type="text" name="type_name" value="${form.type_name }"/>
+	<span style="color: red; font-weight: 900">${errors.type_name }</span>
+	<br/>
+	resource_count	：<input type="text" name="resource_count" value="${form.resource_count }"/>
+	<span style="color: red; font-weight: 900">${errors.resource_count }</span>
 	<br/>
 	<input type="submit" value="Create resource_store"/>
 </form>

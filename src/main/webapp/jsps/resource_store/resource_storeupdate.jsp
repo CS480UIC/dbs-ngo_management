@@ -22,10 +22,10 @@
   
   <body>
   <h1>Update resource_store</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/Resource_storeServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update resource_id   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Update resource_id   :<input type="text" name="resource_id" value="${form.resource_id }"/>
+	<span style="color: red; font-weight: 900">${errors.resource_id }</span>
 	<br/>
 	<input type="submit" value="Update resource_store"/>
 </form>

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Resource_store</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,28 +21,32 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Resource_store</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	resource_id    :<input type="text" name="resource_id" value="${resource_store.resource_id }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	name：<input type="text" name="name" value="${resource_store.name }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	type_name	：<input type="text" name="type_name" value="${resource_store.type_name }" disabled/>
+	<br/>
+	resource_count	：<input type="text" name="resource_count" value="${resource_store.resource_count }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/Resource_storeServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+				<input type="hidden" name="resource_id" value="${resource_store.resource_id }"/>
+	name : <input type="text" name="name" value="${form.name }"/>
+	<span style="color: red; font-weight: 900">${errors.name }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	type_name ： <input type="text" name="type_name" value="${form.type_name }"/>
+	<span style="color: red; font-weight: 900">${errors.type_name }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	resource_count	：<input type="text" name="resource_count" value="${form.resource_count }"/>
+	<span style="color: red; font-weight: 900">${errors.resource_count }</span>
+	<br/>
+	<input type="submit" value="Update Resource_store"/>
 </form>
 
 </body>

@@ -22,10 +22,10 @@
   
   <body>
   <h1>Delete resource_store</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/Resource_storeServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete resource_id   :<input type="text" name="resource_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete resource_id   :<input type="text" name="resource_id" value="${form.resource_id }"/>
+	<span style="color: red; font-weight: 900">${errors.resource_id }</span>
 	<br/>
 	<input type="submit" value="Delete resource_store"/>
 </form>
