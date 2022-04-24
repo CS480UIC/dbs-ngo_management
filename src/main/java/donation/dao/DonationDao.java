@@ -161,7 +161,7 @@ public class DonationDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
-			String sql = "select count(transaction_id) as TOTAL_DONATIONS from donation where time < \\'2022-02-03 05:00:00\\'";
+			String sql = "select count(transaction_id) as TOTAL_DONATIONS from donation where time < \'2022-02-03 05:00:00\'";
 			PreparedStatement preparestatement = connect.prepareStatement(sql);
 			ResultSet resultSet = preparestatement.executeQuery();
 			while(resultSet.next()){
