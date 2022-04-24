@@ -13,6 +13,7 @@
 	<tr>
 		<th>first_name</th>
 		<th>Number of Donations</th>
+
 	</tr>
 <c:forEach items="${NumberDonationList}" var="donor">
 	<tr>
