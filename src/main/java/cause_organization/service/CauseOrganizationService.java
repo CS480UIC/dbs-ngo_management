@@ -6,7 +6,7 @@ import cause_organization.domain.CauseOrganization;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class CauseOrganizationService {

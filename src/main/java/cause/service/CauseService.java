@@ -6,7 +6,7 @@ import cause.domain.Cause;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class CauseService {

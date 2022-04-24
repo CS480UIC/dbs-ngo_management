@@ -3,7 +3,7 @@ package cause.domain;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ *
  * 
  */
 public class Cause {
