@@ -27,4 +27,9 @@ public class OrganizationService {
 		if(organization.getOrganization_id()!= null && organization.getOrganization_id() == form.getOrganization_id()) throw new OrganizationException("This organization name has been registered before!");
 		organizationDao.add(form);
 	}
+	
+	public List<Object> findEmployeeOrg() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return organizationDao.findEmployeeOrg();
+
+	}
 }

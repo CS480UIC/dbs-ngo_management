@@ -133,4 +133,35 @@ public class OrganizationDao {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	public List<Object> findEmployeeOrg() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
+			String sql = "create or replace view emp_org AS\r\n"
+					+ "select E.employee_id, E.first_name, O.organization_name\r\n"
+					+ "from ngo_management_system.employee E\r\n"
+					+ "inner join ngo_management_system.organization O ON O.organization_id = E.organization_id\r\n"
+					+ "group by E.organization_id\r\n"
+					+ "order by E.first_name asc";
+			PreparedStatement preparestatement = connect.prepareStatement(sql);
+			preparestatement.executeUpdate();
+			sql = "select * from emp_org";
+			preparestatement = connect.prepareStatement(sql);
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				EmployeeOrganization emporg = new EmployeeOrganization();
+				emporg.setEmployee_id(Integer.parseInt(resultSet.getString("employee_id")));
+				emporg.setFirst_name(resultSet.getString("first_name"));
+				emporg.setOrganization_name(resultSet.getString("organization_name"));
+				list.add(emporg);
+			}
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+
+	}
 }
