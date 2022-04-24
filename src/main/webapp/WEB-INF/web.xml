@@ -94,6 +94,489 @@
     <url-pattern>/UserServletLogout</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>CauseServletCreate</display-name>
+    <servlet-name>CauseServletCreate</servlet-name>
+    <servlet-class>cause.web.servlet.CauseServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CauseServletCreate</servlet-name>
+    <url-pattern>/CauseServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CauseServletDelete</display-name>
+    <servlet-name>CauseServletDelete</servlet-name>
+    <servlet-class>cause.web.servlet.CauseServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CauseServletDelete</servlet-name>
+    <url-pattern>/CauseServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CauseServletRead</display-name>
+    <servlet-name>CauseServletRead</servlet-name>
+    <servlet-class>cause.web.servlet.CauseServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CauseServletRead</servlet-name>
+    <url-pattern>/CauseServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CauseServletUpdate</display-name>
+    <servlet-name>CauseServletUpdate</servlet-name>
+    <servlet-class>cause.web.servlet.CauseServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CauseServletUpdate</servlet-name>
+    <url-pattern>/CauseServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OrganizationServletCreate</display-name>
+    <servlet-name>OrganizationServletCreate</servlet-name>
+    <servlet-class>organization.web.servlet.OrganizationServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrganizationServletCreate</servlet-name>
+    <url-pattern>/OrganizationServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OrganizationServletDelete</display-name>
+    <servlet-name>OrganizationServletDelete</servlet-name>
+    <servlet-class>organization.web.servlet.OrganizationServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrganizationServletDelete</servlet-name>
+    <url-pattern>/OrganizationServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OrganizationServletRead</display-name>
+    <servlet-name>OrganizationServletRead</servlet-name>
+    <servlet-class>organization.web.servlet.OrganizationServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrganizationServletRead</servlet-name>
+    <url-pattern>/OrganizationServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OrganizationServletUpdate</display-name>
+    <servlet-name>OrganizationServletUpdate</servlet-name>
+    <servlet-class>organization.web.servlet.OrganizationServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrganizationServletUpdate</servlet-name>
+    <url-pattern>/OrganizationServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServletCreate</display-name>
+    <servlet-name>EmployeeServletCreate</servlet-name>
+    <servlet-class>employee.web.servlet.EmployeeServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletCreate</servlet-name>
+    <url-pattern>/EmployeeServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServletDelete</display-name>
+    <servlet-name>EmployeeServletDelete</servlet-name>
+    <servlet-class>employee.web.servlet.EmployeeServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletDelete</servlet-name>
+    <url-pattern>/EmployeeServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServletRead</display-name>
+    <servlet-name>EmployeeServletRead</servlet-name>
+    <servlet-class>employee.web.servlet.EmployeeServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletRead</servlet-name>
+    <url-pattern>/EmployeeServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServletUpdate</display-name>
+    <servlet-name>EmployeeServletUpdate</servlet-name>
+    <servlet-class>employee.web.servlet.EmployeeServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServletUpdate</servlet-name>
+    <url-pattern>/EmployeeServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>VolunteerServletCreate</display-name>
+    <servlet-name>VolunteerServletCreate</servlet-name>
+    <servlet-class>volunteer.web.servlet.VolunteerServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VolunteerServletCreate</servlet-name>
+    <url-pattern>/VolunteerServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>VolunteerServletDelete</display-name>
+    <servlet-name>VolunteerServletDelete</servlet-name>
+    <servlet-class>volunteer.web.servlet.VolunteerServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VolunteerServletDelete</servlet-name>
+    <url-pattern>/VolunteerServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>VolunteerServletRead</display-name>
+    <servlet-name>VolunteerServletRead</servlet-name>
+    <servlet-class>volunteer.web.servlet.VolunteerServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VolunteerServletRead</servlet-name>
+    <url-pattern>/VolunteerServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>VolunteerServletUpdate</display-name>
+    <servlet-name>VolunteerServletUpdate</servlet-name>
+    <servlet-class>volunteer.web.servlet.VolunteerServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VolunteerServletUpdate</servlet-name>
+    <url-pattern>/VolunteerServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DonorServletCreate</display-name>
+    <servlet-name>DonorServletCreate</servlet-name>
+    <servlet-class>donor.web.servlet.DonorServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonorServletCreate</servlet-name>
+    <url-pattern>/DonorServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DonorServletDelete</display-name>
+    <servlet-name>DonorServletDelete</servlet-name>
+    <servlet-class>donor.web.servlet.DonorServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonorServletDelete</servlet-name>
+    <url-pattern>/DonorServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DonorServletRead</display-name>
+    <servlet-name>DonorServletRead</servlet-name>
+    <servlet-class>donor.web.servlet.DonorServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonorServletRead</servlet-name>
+    <url-pattern>/DonorServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DonorServletUpdate</display-name>
+    <servlet-name>DonorServletUpdate</servlet-name>
+    <servlet-class>donor.web.servlet.DonorServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonorServletUpdate</servlet-name>
+    <url-pattern>/DonorServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Resource_storeServletCreate</display-name>
+    <servlet-name>Resource_storeServletCreate</servlet-name>
+    <servlet-class>resource_store.web.servlet.Resource_storeServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Resource_storeServletCreate</servlet-name>
+    <url-pattern>/Resource_storeServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Resource_storeServletDelete</display-name>
+    <servlet-name>Resource_storeServletDelete</servlet-name>
+    <servlet-class>resource_store.web.servlet.Resource_storeServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Resource_storeServletDelete</servlet-name>
+    <url-pattern>/Resource_storeServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Resource_storeServletRead</display-name>
+    <servlet-name>Resource_storeServletRead</servlet-name>
+    <servlet-class>resource_store.web.servlet.Resource_storeServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Resource_storeServletRead</servlet-name>
+    <url-pattern>/Resource_storeServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Resource_storeServletUpdate</display-name>
+    <servlet-name>Resource_storeServletUpdate</servlet-name>
+    <servlet-class>resource_store.web.servlet.Resource_storeServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Resource_storeServletUpdate</servlet-name>
+    <url-pattern>/Resource_storeServletUpdate</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>DonationServletCreate</display-name>
+    <servlet-name>DonationServletCreate</servlet-name>
+    <servlet-class>donation.web.servlet.DonationServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonationServletCreate</servlet-name>
+    <url-pattern>/DonationServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DonationServletDelete</display-name>
+    <servlet-name>DonationServletDelete</servlet-name>
+    <servlet-class>donation.web.servlet.DonationServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonationServletDelete</servlet-name>
+    <url-pattern>/DonationServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DonationServletRead</display-name>
+    <servlet-name>DonationServletRead</servlet-name>
+    <servlet-class>donation.web.servlet.DonationServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonationServletRead</servlet-name>
+    <url-pattern>/DonationServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DonationServletUpdate</display-name>
+    <servlet-name>DonationServletUpdate</servlet-name>
+    <servlet-class>donation.web.servlet.DonationServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonationServletUpdate</servlet-name>
+    <url-pattern>/DonationServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Resource_usageServletCreate</display-name>
+    <servlet-name>Resource_usageServletCreate</servlet-name>
+    <servlet-class>resource_usage.web.servlet.Resource_usageServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Resource_usageServletCreate</servlet-name>
+    <url-pattern>/Resource_usageServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Resource_usageServletDelete</display-name>
+    <servlet-name>Resource_usageServletDelete</servlet-name>
+    <servlet-class>resource_usage.web.servlet.Resource_usageServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Resource_usageServletDelete</servlet-name>
+    <url-pattern>/Resource_usageServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Resource_usageServletRead</display-name>
+    <servlet-name>Resource_usageServletRead</servlet-name>
+    <servlet-class>resource_usage.web.servlet.Resource_usageServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Resource_usageServletRead</servlet-name>
+    <url-pattern>/Resource_usageServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Resource_usageServletUpdate</display-name>
+    <servlet-name>Resource_usageServletUpdate</servlet-name>
+    <servlet-class>resource_usage.web.servlet.Resource_usageServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Resource_usageServletUpdate</servlet-name>
+    <url-pattern>/Resource_usageServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Cause_organizationServletCreate</display-name>
+    <servlet-name>Cause_organizationServletCreate</servlet-name>
+    <servlet-class>cause_organization.web.servlet.Cause_organizationServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cause_organizationServletCreate</servlet-name>
+    <url-pattern>/Cause_organizationServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Cause_organizationServletDelete</display-name>
+    <servlet-name>Cause_organizationServletDelete</servlet-name>
+    <servlet-class>cause_organization.web.servlet.Cause_organizationServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cause_organizationServletDelete</servlet-name>
+    <url-pattern>/Cause_organizationServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Cause_organizationServletRead</display-name>
+    <servlet-name>Cause_organizationServletRead</servlet-name>
+    <servlet-class>cause_organization.web.servlet.Cause_organizationServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cause_organizationServletRead</servlet-name>
+    <url-pattern>/Cause_organizationServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Cause_organizationServletUpdate</display-name>
+    <servlet-name>Cause_organizationServletUpdate</servlet-name>
+    <servlet-class>cause_organization.web.servlet.Cause_organizationServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cause_organizationServletUpdate</servlet-name>
+    <url-pattern>/Cause_organizationServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Volunteer_support_causeServletCreate</display-name>
+    <servlet-name>Volunteer_support_causeServletCreate</servlet-name>
+    <servlet-class>volunteer_support_cause.web.servlet.Volunteer_support_causeServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Volunteer_support_causeServletCreate</servlet-name>
+    <url-pattern>/Volunteer_support_causeServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Volunteer_support_causeServletDelete</display-name>
+    <servlet-name>Volunteer_support_causeServletDelete</servlet-name>
+    <servlet-class>volunteer_support_cause.web.servlet.Volunteer_support_causeServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Volunteer_support_causeServletDelete</servlet-name>
+    <url-pattern>/Volunteer_support_causeServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Volunteer_support_causeServletRead</display-name>
+    <servlet-name>Volunteer_support_causeServletRead</servlet-name>
+    <servlet-class>volunteer_support_cause.web.servlet.Volunteer_support_causeServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Volunteer_support_causeServletRead</servlet-name>
+    <url-pattern>/Volunteer_support_causeServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Volunteer_support_causeServletUpdate</display-name>
+    <servlet-name>Volunteer_support_causeServletUpdate</servlet-name>
+    <servlet-class>volunteer_support_cause.web.servlet.Volunteer_support_causeServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Volunteer_support_causeServletUpdate</servlet-name>
+    <url-pattern>/Volunteer_support_causeServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Donation_donation_typeServletCreate</display-name>
+    <servlet-name>Donation_donation_typeServletCreate</servlet-name>
+    <servlet-class>donation_donation_type.web.servlet.Donation_donation_typeServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Donation_donation_typeServletCreate</servlet-name>
+    <url-pattern>/Donation_donation_typeServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Donation_donation_typeServletDelete</display-name>
+    <servlet-name>Donation_donation_typeServletDelete</servlet-name>
+    <servlet-class>donation_donation_type.web.servlet.Donation_donation_typeServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Donation_donation_typeServletDelete</servlet-name>
+    <url-pattern>/Donation_donation_typeServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Donation_donation_typeServletRead</display-name>
+    <servlet-name>Donation_donation_typeServletRead</servlet-name>
+    <servlet-class>donation_donation_type.web.servlet.Donation_donation_typeServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Donation_donation_typeServletRead</servlet-name>
+    <url-pattern>/Donation_donation_typeServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Donation_donation_typeServletUpdate</display-name>
+    <servlet-name>Donation_donation_typeServletUpdate</servlet-name>
+    <servlet-class>donation_donation_type.web.servlet.Donation_donation_typeServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Donation_donation_typeServletUpdate</servlet-name>
+    <url-pattern>/Donation_donation_typeServletUpdate</url-pattern>
+  </servlet-mapping>
   
   <servlet>
     <description></description>
@@ -106,6 +589,115 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findEmployees</display-name>
+    <servlet-name>findEmployees</servlet-name>
+    
+    <servlet-class>employee.web.servlet.findEmployees</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findEmployees</servlet-name>
+    <url-pattern>/findEmployees</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findDonations</display-name>
+    <servlet-name>findDonations</servlet-name>
+    
+    <servlet-class>donation.web.servlet.findDonations</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findDonations</servlet-name>
+    <url-pattern>/findDonations</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findVolunteers</display-name>
+    <servlet-name>findVolunteers</servlet-name>
+    
+    <servlet-class>volunteer.web.servlet.findVolunteers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findVolunteers</servlet-name>
+    <url-pattern>/findVolunteers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findExpense</display-name>
+    <servlet-name>findExpense</servlet-name>
+    
+    <servlet-class>employee.web.servlet.findExpense</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findExpense</servlet-name>
+    <url-pattern>/findExpense</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findTotalDonation</display-name>
+    <servlet-name>findTotalDonation</servlet-name>
+    
+    <servlet-class>donation.web.servlet.findTotalDonation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findTotalDonation</servlet-name>
+    <url-pattern>/findTotalDonation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findNumberDonations</display-name>
+    <servlet-name>findNumberDonations</servlet-name>
+    
+    <servlet-class>donor.web.servlet.findNumberDonations</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findNumberDonations</servlet-name>
+    <url-pattern>/findNumberDonations</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findEmployeeOrg</display-name>
+    <servlet-name>findEmployeeOrg</servlet-name>
+    
+    <servlet-class>organization.web.servlet.findEmployeeOrg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findEmployeeOrg</servlet-name>
+    <url-pattern>/findEmployeeOrg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findDonateTime</display-name>
+    <servlet-name>findDonateTime</servlet-name>
+    
+    <servlet-class>donor.web.servlet.findDonateTime</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findDonateTime</servlet-name>
+    <url-pattern>/findDonateTime</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findVolunteerCause</display-name>
+    <servlet-name>findVolunteerCause</servlet-name>
+    
+    <servlet-class>volunteer.web.servlet.findVolunteerCause</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findVolunteerCause</servlet-name>
+    <url-pattern>/findVolunteerCause</url-pattern>
+  </servlet-mapping>
+
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>
