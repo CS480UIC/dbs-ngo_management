@@ -22,10 +22,10 @@
   
   <body>
   <h1>Delete donation</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/DonationServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete transaction_id   :<input type="text" name="transaction_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete transaction_id   :<input type="text" name="transaction_id" value="${form.transaction_id }"/>
+	<span style="color: red; font-weight: 900">${errors.transaction_id }</span>
 	<br/>
 	<input type="submit" value="Delete donation"/>
 </form>

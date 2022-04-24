@@ -22,18 +22,24 @@
   
   <body>
   <h1>donation Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	donor_id ：<input type="text" name="donor_id" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+<form action="<c:url value='/DonationServletCreate'/>" method="post">
+	transaction_id ：<input type="text" name="transaction_id" value="${form.transaction_id }"/>
+	<span style="color: red; font-weight: 900">${errors.transaction_id }</span>
 	<br/>
-	resource_id	：<input type="text" name="resource_id" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	donor_id ：<input type="text" name="donor_id" value="${form.donor_id }"/>
+	<span style="color: red; font-weight: 900">${errors.donor_id }</span>
 	<br/>
-	organization_id	：<input type="text" name="organization_id" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	resource_id	：<input type="text" name="resource_id" value="${form.resource_id }"/>
+	<span style="color: red; font-weight: 900">${errors.resource_id }</span>
 	<br/>
-	amount	：<input type="text" name="amount" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	organization_id	：<input type="text" name="organization_id" value="${form.organization_id }"/>
+	<span style="color: red; font-weight: 900">${errors.organization_id }</span>
+	<br/>
+	time	：<input type="text" name="time" value="${form.time }"/>
+	<span style="color: red; font-weight: 900">${errors.time }</span>
+	<br/>	
+	amount	：<input type="text" name="amount" value="${form.amount }"/>
+	<span style="color: red; font-weight: 900">${errors.amount }</span>
 	<br/>
 	<input type="submit" value="Create donation"/>
 </form>

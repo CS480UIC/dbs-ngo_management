@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Donation</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,24 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Donation</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/DonationServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="transaction_id" value="${donation.transaction_id }"/>
+	transaction_id    :<input type="text" name="transaction_id" value="${donation.transaction_id }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	donor_id：<input type="text" name="donor_id" value="${donation.donor_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	resource_id	：<input type="text" name="resource_id" value="${donation.resource_id }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	organization_id	：<input type="text" name="organization_id" value="${donation.organization_id }" disabled/>
+	<br/>
+	time	：<input type="text" name="time" value="${donation.time }" disabled/>
+	<br/>
+	amount	：<input type="text" name="amount" value="${donation.amount }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Donation"/>
 </form>
 
 </body>

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Donation Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,20 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Donation Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	transaction_id    :<input type="text" name="transaction_id" value="${donation.transaction_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	donor_id：<input type="text" name="donor_id" value="${donation.donor_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	resource_id	：<input type="text" name="resource_id" value="${donation.resource_id }" disabled/>
+	<br/>
+	organization_id	：<input type="text" name="organization_id" value="${donation.organization_id }" disabled/>
+	<br/>
+	time	：<input type="text" name="time" value="${donation.time }" disabled/>
+	<br/>
+	amount	：<input type="text" name="amount" value="${donation.amount }" disabled/>
 	<br/>
 </form>
 

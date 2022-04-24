@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Donation</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,28 +21,42 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Donation</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	transaction_id    :<input type="text" name="transaction_id" value="${donation.transaction_id }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	donor_id：<input type="text" name="donor_id" value="${donation.donor_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	resource_id	：<input type="text" name="resource_id" value="${donation.resource_id }" disabled/>
+	<br/>
+	organization_id	：<input type="text" name="organization_id" value="${donation.organization_id }" disabled/>
+	<br/>
+	time	：<input type="text" name="time" value="${donation.time }" disabled/>
+	<br/>
+	amount	：<input type="text" name="amount" value="${donation.amount }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/DonationServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+				<input type="hidden" name="transaction_id" value="${donation.transaction_id }"/>
+	donor_id ：<input type="text" name="donor_id" value="${form.donor_id }"/>
+	<span style="color: red; font-weight: 900">${errors.donor_id }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	resource_id	：<input type="text" name="resource_id" value="${form.resource_id }"/>
+	<span style="color: red; font-weight: 900">${errors.resource_id }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	organization_id	：<input type="text" name="organization_id" value="${form.organization_id }"/>
+	<span style="color: red; font-weight: 900">${errors.organization_id }</span>
+	<br/>
+	time	：<input type="text" name="time" value="${form.time }"/>
+	<span style="color: red; font-weight: 900">${errors.time }</span>
+	<br/>	
+	amount	：<input type="text" name="amount" value="${form.amount }"/>
+	<span style="color: red; font-weight: 900">${errors.amount }</span>
+	<br/>
+	<input type="submit" value="Update donation"/>
 </form>
 
 </body>

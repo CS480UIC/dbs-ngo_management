@@ -23,10 +23,10 @@
   <body>
   <h1>Read donation</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/DonationServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	transaction_id    :<input type="text" name="transaction_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	transaction_id    :<input type="text" name="transaction_id" value="${form.transaction_id }"/>
+	<span style="color: red; font-weight: 900">${errors.transaction_id }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
