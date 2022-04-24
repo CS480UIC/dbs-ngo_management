@@ -144,4 +144,26 @@ public class DonorDao {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	public List<Object> findNumberDonations() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
+			String sql = "select first_name, sum(num_of_donations) as num_donations from donor group by first_name having sum(num_of_donations) > 50";
+			PreparedStatement preparestatement = connect.prepareStatement(sql);
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Donor donor = new Donor();
+				donor.setFirst_name(resultSet.getString("first_name"));
+				donor.setNum_of_donations(Integer.parseInt(resultSet.getString("num_donations")));
+				list.add(donor);
+			}
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+
+	}
 }
