@@ -22,30 +22,36 @@
   
   <body>
   <h1>employee Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	first_name   : <input type="text" name="first_name" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/EmployeeServletCreate'/>" method="post">
+	employee_id   : <input type="text" name="employee_id" value="${form.employee_id }"/>
+	<span style="color: red; font-weight: 900">${errors.employee_id }</span>
 	<br/>
-	last_name ： <input type="last_name" name="last_name" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	first_name   : <input type="text" name="first_name" value="${form.first_name }"/>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
 	<br/>
-	ssn	： <input type="text" name="ssn" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	last_name ： <input type="last_name" name="last_name" value="${form.last_name }"/>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
 	<br/>
-	organization_id	： <input type="text" name="organization_id" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	ssn	： <input type="text" name="ssn" value="${form.ssn }"/>
+	<span style="color: red; font-weight: 900">${errors.ssn }</span>
 	<br/>
-	birth_date	： <input type="text" name="birth_date" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	organization_id	： <input type="text" name="organization_id" value="${form.organization_id }"/>
+	<span style="color: red; font-weight: 900">${errors.organization_id }</span>
 	<br/>
-	address	： <input type="text" name="address" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	salary	： <input type="text" name="salary" value="${form.salary }"/>
+	<span style="color: red; font-weight: 900">${errors.salary }</span>
+	<br/>
+	birth_date	： <input type="text" name="birth_date" value="${form.birth_date }"/>
+	<span style="color: red; font-weight: 900">${errors.birth_date }</span>
+	<br/>
+	address	： <input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
 	<br/>
 	email	： <input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	phone	： <input type="text" name="phone" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	phone	： <input type="text" name="phone" value="${form.phone }"/>
+	<span style="color: red; font-weight: 900">${errors.phone }</span>
 	<br/>
 	<input type="submit" value="Create employee"/>
 </form>
