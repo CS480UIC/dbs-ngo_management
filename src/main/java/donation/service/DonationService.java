@@ -32,4 +32,9 @@ public class DonationService {
 		return donationDao.findDonations();
 
 	}
+	
+	public List<Object> findTotalDonations() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return donationDao.findTotalDonations();
+
+	}
 }
