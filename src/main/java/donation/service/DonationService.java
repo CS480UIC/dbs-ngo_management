@@ -27,4 +27,9 @@ public class DonationService {
 		if(donation.getTransaction_id()!= null && donation.getTransaction_id() == form.getTransaction_id()) throw new DonationException("This donation name has been registered before!");
 		donationDao.add(form);
 	}
+	
+	public List<Object> findDonations() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return donationDao.findDonations();
+
+	}
 }

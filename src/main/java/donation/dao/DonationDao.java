@@ -134,4 +134,25 @@ public class DonationDao {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	public List<Object> findDonations() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
+			String sql = "select transaction_id, donor_id from donation where amount >= 1000 and amount <= 10000";
+			PreparedStatement preparestatement = connect.prepareStatement(sql);
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Donation donation = new Donation();
+				donation.setTransaction_id(Integer.parseInt(resultSet.getString("transaction_id")));
+				donation.setDonor_id(Integer.parseInt(resultSet.getString("donor_id")));
+				list.add(donation);
+			}
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+	}
 }
