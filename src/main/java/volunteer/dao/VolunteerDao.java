@@ -162,4 +162,38 @@ public class VolunteerDao {
 		return list;
 
 	}
+	
+	public List<Object> findVolunteerCause() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
+			String sql = "CREATE OR REPLACE VIEW ngo_management_system.cause_volunteer AS\\r\\n"
+					+ "SELECT v.volunteer_id, v.first_name, count(vs.support_cause_id) as num_causes, c.cause_name\\r\\n"
+					+ "FROM ngo_management_system.volunteer v\\r\\n"
+					+ "INNER JOIN ngo_management_system.volunteer_support_cause vs on vs.volunteer_id=v.volunteer_id\\r\\n"
+					+ "INNER JOIN ngo_management_system.cause c on c.cause_id = support_cause_id\\r\\n"
+					+ "group by v.volunteer_id\\r\\n"
+					+ "order by v.first_name ASC";
+			PreparedStatement preparestatement = connect.prepareStatement(sql);
+			preparestatement.executeUpdate();
+			sql = "select * from cause_volunteer";
+			preparestatement = connect.prepareStatement(sql);
+			ResultSet resultSet = preparestatement.executeQuery();
+			while(resultSet.next()){
+				VolunteerCause volunteercause = new VolunteerCause();
+				volunteercause.setVolunteer_id(Integer.parseInt(resultSet.getString("volunteer_id")));
+				volunteercause.setFirst_name(resultSet.getString("first_name"));
+				volunteercause.setNum_causes(Integer.parseInt(resultSet.getString("num_causes")));
+				volunteercause.setCause_name(resultSet.getString("cause_name"));
+
+	    		list.add(volunteercause);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+
+	}
 }

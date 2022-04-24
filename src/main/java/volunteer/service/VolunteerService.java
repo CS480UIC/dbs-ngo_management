@@ -31,4 +31,8 @@ public class VolunteerService {
 	public List<Object> findVolunteers() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
 		return volunteerDao.findVolunteers();	
 	}
+	
+	public List<Object> findVolunteerCause() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return volunteerDao.findVolunteerCause();
+	}
 }
