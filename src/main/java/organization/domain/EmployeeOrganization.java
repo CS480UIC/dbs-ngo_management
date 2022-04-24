@@ -3,7 +3,7 @@ package organization.domain;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ *
  * 
  */
 public class EmployeeOrganization {

@@ -8,7 +8,7 @@ import organization.domain.Organization;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class OrganizationService {

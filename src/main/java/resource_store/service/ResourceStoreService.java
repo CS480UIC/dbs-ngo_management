@@ -6,7 +6,7 @@ import resource_store.domain.ResourceStore;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class ResourceStoreService {

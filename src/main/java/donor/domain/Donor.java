@@ -3,7 +3,7 @@ package donor.domain;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ *
  * 
  */
 public class Donor {

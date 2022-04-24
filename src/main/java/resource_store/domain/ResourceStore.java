@@ -3,7 +3,7 @@ package resource_store.domain;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ *
  * 
  */
 public class ResourceStore {

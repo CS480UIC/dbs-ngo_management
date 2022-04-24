@@ -8,7 +8,7 @@ import donation.domain.Donation;
 
 /**
  * logic functions such as register, login
- * @author Aayush Makharia
+ *
  *
  */
 public class DonationService {
