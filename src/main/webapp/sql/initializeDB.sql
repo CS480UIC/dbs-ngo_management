@@ -336,6 +336,6 @@ ENGINE = InnoDB;
 
 LOCK TABLES `volunteer_support_cause` WRITE;
 /*!40000 ALTER TABLE `volunteer_support_cause` DISABLE KEYS */;
-INSERT INTO `volunteer_support_cause` VALUES (4,2),(5,2),(3,3),(2,4),(1,5);
+INSERT INTO `volunteer_support_cause` VALUES (4,2),(5,2),(3,3),(2,4),(1,5),(1,4);
 /*!40000 ALTER TABLE `volunteer_support_cause` ENABLE KEYS */;
 UNLOCK TABLES;
