@@ -22,33 +22,33 @@
   
   <body>
   <h1>donor Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	first_name    :<input type="text" name="first_name" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/DonorServletCreate'/>" method="post">
+	donor_id    :<input type="text" name="donor_id" value="${form.donor_id }"/>
+	<span style="color: red; font-weight: 900">${errors.donor_id }</span>
 	<br/>
-	last_name ：<input type="text" name="last_name" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	first_name    :<input type="text" name="first_name" value="${form.first_name }"/>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
 	<br/>
-	birth_date	：<input type="text" name="birth_date" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	last_name ：<input type="text" name="last_name" value="${form.last_name }"/>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
 	<br/>
-	address	：<input type="text" name="address" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	birth_date	：<input type="text" name="birth_date" value="${form.birth_date }"/>
+	<span style="color: red; font-weight: 900">${errors.birth_date }</span>
+	<br/>
+	address	：<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
 	<br/>
 	email ： <input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	phone ： <input type="text" name="phone" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	phone ： <input type="text" name="phone" value="${form.phone }"/>
+	<span style="color: red; font-weight: 900">${errors.phone }</span>
 	<br/>
-	cause ： <input type="text" name="cause" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	num_of_donations ： <input type="text" name="num_of_donations" value="${form.num_of_donations }"/>
+	<span style="color: red; font-weight: 900">${errors.num_of_donations }</span>
 	<br/>
-	num_of_donations ： <input type="text" name="num_of_donations" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/>
-	last_donation ： <input type="text" name="last_donation" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	last_donation ： <input type="text" name="last_donation" value="${form.last_donation }"/>
+	<span style="color: red; font-weight: 900">${errors.last_donation }</span>
 	<br/>
 	<input type="submit" value="Create donor"/>
 </form>

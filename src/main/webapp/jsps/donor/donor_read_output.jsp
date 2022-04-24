@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Donor Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,26 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Donor Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	donor_id    :<input type="text" name="donor_id" value="${donor.donor_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	first_name：<input type="text" name="first_name" value="${donor.first_name }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	last_name	：<input type="text" name="last_name" value="${donor.last_name }" disabled/>
+	<br/>
+	birth_date：<input type="text" name="birth_date" value="${donor.birth_date }" disabled/>
+	<br/>
+	address	：<input type="text" name="address" value="${donor.address }" disabled/>
+	<br/>
+	email	：<input type="text" name="email" value="${donor.email }" disabled/>
+	<br/>
+	phone	：<input type="text" name="phone" value="${donor.phone }" disabled/>
+	<br/>
+	num_of_donations	：<input type="text" name="num_of_donations" value="${donor.num_of_donations }" disabled/>
+	<br/>
+	last_donation	：<input type="text" name="last_donation" value="${donor.last_donation }" disabled/>
 	<br/>
 </form>
 
