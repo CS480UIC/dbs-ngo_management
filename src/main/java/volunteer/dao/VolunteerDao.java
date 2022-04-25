@@ -168,16 +168,19 @@ public class VolunteerDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
-			String sql = "CREATE OR REPLACE VIEW ngo_management_system.cause_volunteer AS\\r\\n"
-					+ "SELECT v.volunteer_id, v.first_name, count(vs.support_cause_id) as num_causes, c.cause_name\\r\\n"
-					+ "FROM ngo_management_system.volunteer v\\r\\n"
-					+ "INNER JOIN ngo_management_system.volunteer_support_cause vs on vs.volunteer_id=v.volunteer_id\\r\\n"
-					+ "INNER JOIN ngo_management_system.cause c on c.cause_id = support_cause_id\\r\\n"
-					+ "group by v.volunteer_id\\r\\n"
-					+ "order by v.first_name ASC";
+			String sql = "CREATE OR REPLACE VIEW cause_volunteer AS\n"
+					+"SELECT v.volunteer_id, v.first_name, num_causes, c.cause_name\n"
+					+"FROM volunteer v INNER JOIN\n"
+					+"(SELECT volunteer_id, count(support_cause_id) AS num_causes\n"
+					+"FROM volunteer_support_cause GROUP BY volunteer_id) AS num_cause_table\n"
+					+"ON v.volunteer_id = num_cause_table.volunteer_id\n"
+					+"INNER JOIN volunteer_support_cause vs ON v.volunteer_id = vs.volunteer_id\n"
+					+"INNER JOIN cause c ON c.cause_id = vs.support_cause_id\n"
+					+"ORDER BY v.first_name ASC";
+
 			PreparedStatement preparestatement = connect.prepareStatement(sql);
 			preparestatement.executeUpdate();
-			sql = "select * from cause_volunteer";
+			sql = "SELECT * FROM cause_volunteer";
 			preparestatement = connect.prepareStatement(sql);
 			ResultSet resultSet = preparestatement.executeQuery();
 			while(resultSet.next()){
