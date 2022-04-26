@@ -41,7 +41,7 @@ public class ResourceUsageServletRead extends HttpServlet {
 		ResourceUsageDao resource_usageDao = new ResourceUsageDao();
 		
 		try {
-			resource_usage = resource_usageDao.findByResourceUsageId(Integer.parseInt(request.getParameter("resource_usage_id")));
+			resource_usage = resource_usageDao.findByResourceUsageId(Integer.parseInt(request.getParameter("usage_id")));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {

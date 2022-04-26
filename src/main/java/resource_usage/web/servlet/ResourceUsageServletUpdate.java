@@ -47,7 +47,7 @@ public class ResourceUsageServletUpdate extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				resource_usage = resource_usagedao.findByResourceUsageId(Integer.parseInt(request.getParameter("resource_usage_id")));
+				resource_usage = resource_usagedao.findByResourceUsageId(Integer.parseInt(request.getParameter("usage_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -77,7 +77,7 @@ public class ResourceUsageServletUpdate extends HttpServlet {
 				info.add(values[0]);
 				System.out.println(values[0]);
 			}
-			form.setUsage_id(Integer.parseInt(request.getParameter("resource_usage_id")));
+			form.setUsage_id(Integer.parseInt(request.getParameter("usage_id")));
 			form.setResource_id(Integer.parseInt(info.get(2)));
 			form.setOrganization_id(Integer.parseInt(info.get(3)));
 			form.setUsage_count(Float.parseFloat(info.get(4)));

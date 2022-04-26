@@ -34,18 +34,18 @@ public class ResourceUsageDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
-		    String sql = "select * from resource_usage where resource_id=?";
+		    String sql = "select * from resource_usage where usage_id=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,resource_usageid);
 		    ResultSet resultSet = preparestatement.executeQuery();
 
 		    while(resultSet.next()){
-		    	Integer resource_usage_id = resultSet.getInt("resource_id");
+		    	Integer resource_usage_id = resultSet.getInt("usage_id");
 		    	if(resource_usage_id == resource_usageid){
 		    		resource_usage.setUsage_id(resource_usage_id);
 		    		resource_usage.setResource_id(Integer.parseInt(resultSet.getString("resource_id")));
 		    		resource_usage.setOrganization_id(Integer.parseInt(resultSet.getString("organization_id")));
-		    		resource_usage.setUsage_count(Float.parseFloat(resultSet.getString("amount")));
+		    		resource_usage.setUsage_count(Float.parseFloat(resultSet.getString("usage_count")));
 		    	}
 		    }
 		    connect.close();
