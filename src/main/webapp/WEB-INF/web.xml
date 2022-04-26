@@ -329,7 +329,7 @@
     <description></description>
     <display-name>Resource_storeServletCreate</display-name>
     <servlet-name>Resource_storeServletCreate</servlet-name>
-    <servlet-class>resource_store.web.servlet.Resource_storeServletCreate</servlet-class>
+    <servlet-class>resource_store.web.servlet.ResourceStoreServletCreate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Resource_storeServletCreate</servlet-name>
@@ -340,7 +340,7 @@
     <description></description>
     <display-name>Resource_storeServletDelete</display-name>
     <servlet-name>Resource_storeServletDelete</servlet-name>
-    <servlet-class>resource_store.web.servlet.Resource_storeServletDelete</servlet-class>
+    <servlet-class>resource_store.web.servlet.ResourceStoreServletDelete</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Resource_storeServletDelete</servlet-name>
@@ -351,7 +351,7 @@
     <description></description>
     <display-name>Resource_storeServletRead</display-name>
     <servlet-name>Resource_storeServletRead</servlet-name>
-    <servlet-class>resource_store.web.servlet.Resource_storeServletRead</servlet-class>
+    <servlet-class>resource_store.web.servlet.ResourceStoreServletRead</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Resource_storeServletRead</servlet-name>
@@ -362,7 +362,7 @@
     <description></description>
     <display-name>Resource_storeServletUpdate</display-name>
     <servlet-name>Resource_storeServletUpdate</servlet-name>
-    <servlet-class>resource_store.web.servlet.Resource_storeServletUpdate</servlet-class>
+    <servlet-class>resource_store.web.servlet.ResourceStoreServletUpdate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Resource_storeServletUpdate</servlet-name>
@@ -417,7 +417,7 @@
     <description></description>
     <display-name>Resource_usageServletCreate</display-name>
     <servlet-name>Resource_usageServletCreate</servlet-name>
-    <servlet-class>resource_usage.web.servlet.Resource_usageServletCreate</servlet-class>
+    <servlet-class>resource_usage.web.servlet.ResourceUsageServletCreate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Resource_usageServletCreate</servlet-name>
@@ -428,7 +428,7 @@
     <description></description>
     <display-name>Resource_usageServletDelete</display-name>
     <servlet-name>Resource_usageServletDelete</servlet-name>
-    <servlet-class>resource_usage.web.servlet.Resource_usageServletDelete</servlet-class>
+    <servlet-class>resource_usage.web.servlet.ResourceUsageServletDelete</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Resource_usageServletDelete</servlet-name>
@@ -439,7 +439,7 @@
     <description></description>
     <display-name>Resource_usageServletRead</display-name>
     <servlet-name>Resource_usageServletRead</servlet-name>
-    <servlet-class>resource_usage.web.servlet.Resource_usageServletRead</servlet-class>
+    <servlet-class>resource_usage.web.servlet.ResourceUsageServletRead</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Resource_usageServletRead</servlet-name>
@@ -450,7 +450,7 @@
     <description></description>
     <display-name>Resource_usageServletUpdate</display-name>
     <servlet-name>Resource_usageServletUpdate</servlet-name>
-    <servlet-class>resource_usage.web.servlet.Resource_usageServletUpdate</servlet-class>
+    <servlet-class>resource_usage.web.servlet.ResourceUsageServletUpdate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Resource_usageServletUpdate</servlet-name>
@@ -461,7 +461,7 @@
     <description></description>
     <display-name>Cause_organizationServletCreate</display-name>
     <servlet-name>Cause_organizationServletCreate</servlet-name>
-    <servlet-class>cause_organization.web.servlet.Cause_organizationServletCreate</servlet-class>
+    <servlet-class>cause_organization.web.servlet.CauseOrganizationServletCreate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Cause_organizationServletCreate</servlet-name>
@@ -472,7 +472,7 @@
     <description></description>
     <display-name>Cause_organizationServletDelete</display-name>
     <servlet-name>Cause_organizationServletDelete</servlet-name>
-    <servlet-class>cause_organization.web.servlet.Cause_organizationServletDelete</servlet-class>
+    <servlet-class>cause_organization.web.servlet.CauseOrganizationServletDelete</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Cause_organizationServletDelete</servlet-name>
@@ -483,7 +483,7 @@
     <description></description>
     <display-name>Cause_organizationServletRead</display-name>
     <servlet-name>Cause_organizationServletRead</servlet-name>
-    <servlet-class>cause_organization.web.servlet.Cause_organizationServletRead</servlet-class>
+    <servlet-class>cause_organization.web.servlet.CauseOrganizationServletRead</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Cause_organizationServletRead</servlet-name>
@@ -494,7 +494,7 @@
     <description></description>
     <display-name>Cause_organizationServletUpdate</display-name>
     <servlet-name>Cause_organizationServletUpdate</servlet-name>
-    <servlet-class>cause_organization.web.servlet.Cause_organizationServletUpdate</servlet-class>
+    <servlet-class>cause_organization.web.servlet.CauseOrganizationServletUpdate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Cause_organizationServletUpdate</servlet-name>
@@ -516,7 +516,7 @@
     <description></description>
     <display-name>Volunteer_support_causeServletDelete</display-name>
     <servlet-name>Volunteer_support_causeServletDelete</servlet-name>
-    <servlet-class>volunteer_support_cause.web.servlet.Volunteer_support_causeServletDelete</servlet-class>
+    <servlet-class>volunteer_support_cause.web.servlet.VolunteerSupportCauseServletDelete</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Volunteer_support_causeServletDelete</servlet-name>
@@ -527,7 +527,7 @@
     <description></description>
     <display-name>Volunteer_support_causeServletRead</display-name>
     <servlet-name>Volunteer_support_causeServletRead</servlet-name>
-    <servlet-class>volunteer_support_cause.web.servlet.Volunteer_support_causeServletRead</servlet-class>
+    <servlet-class>volunteer_support_cause.web.servlet.VolunteerSupportCauseServletRead</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Volunteer_support_causeServletRead</servlet-name>
@@ -538,7 +538,7 @@
     <description></description>
     <display-name>Volunteer_support_causeServletUpdate</display-name>
     <servlet-name>Volunteer_support_causeServletUpdate</servlet-name>
-    <servlet-class>volunteer_support_cause.web.servlet.Volunteer_support_causeServletUpdate</servlet-class>
+    <servlet-class>volunteer_support_cause.web.servlet.VolunteerSupportCauseServletUpdate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Volunteer_support_causeServletUpdate</servlet-name>
@@ -549,7 +549,7 @@
     <description></description>
     <display-name>Donation_donation_typeServletCreate</display-name>
     <servlet-name>Donation_donation_typeServletCreate</servlet-name>
-    <servlet-class>donation_donation_type.web.servlet.Donation_donation_typeServletCreate</servlet-class>
+    <servlet-class>donation_donation_type.web.servlet.DonationDonationTypeServletCreate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Donation_donation_typeServletCreate</servlet-name>
@@ -560,7 +560,7 @@
     <description></description>
     <display-name>Donation_donation_typeServletDelete</display-name>
     <servlet-name>Donation_donation_typeServletDelete</servlet-name>
-    <servlet-class>donation_donation_type.web.servlet.Donation_donation_typeServletDelete</servlet-class>
+    <servlet-class>donation_donation_type.web.servlet.DonationDonationTypeServletDelete</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Donation_donation_typeServletDelete</servlet-name>
@@ -571,7 +571,7 @@
     <description></description>
     <display-name>Donation_donation_typeServletRead</display-name>
     <servlet-name>Donation_donation_typeServletRead</servlet-name>
-    <servlet-class>donation_donation_type.web.servlet.Donation_donation_typeServletRead</servlet-class>
+    <servlet-class>donation_donation_type.web.servlet.DonationDonationTypeServletRead</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Donation_donation_typeServletRead</servlet-name>
@@ -582,7 +582,7 @@
     <description></description>
     <display-name>Donation_donation_typeServletUpdate</display-name>
     <servlet-name>Donation_donation_typeServletUpdate</servlet-name>
-    <servlet-class>donation_donation_type.web.servlet.Donation_donation_typeServletUpdate</servlet-class>
+    <servlet-class>donation_donation_type.web.servlet.DonationDonationTypeServletUpdate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Donation_donation_typeServletUpdate</servlet-name>
