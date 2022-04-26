@@ -505,7 +505,7 @@
     <description></description>
     <display-name>Volunteer_support_causeServletCreate</display-name>
     <servlet-name>Volunteer_support_causeServletCreate</servlet-name>
-    <servlet-class>volunteer_support_cause.web.servlet.Volunteer_support_causeServletCreate</servlet-class>
+    <servlet-class>volunteer_support_cause.web.servlet.VolunteerSupportCauseServletCreate</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Volunteer_support_causeServletCreate</servlet-name>
