@@ -45,11 +45,14 @@ WHERE EXISTS (SELECT n.donor_id
               
 SELECT * FROM ngo_management_system.donate_time;
               
-CREATE OR REPLACE VIEW ngo_management_system.cause_volunteer AS
-SELECT v.volunteer_id, v.first_name
-FROM ngo_management_system.volunteer v
-INNER JOIN ngo_management_system.volunteer_support_cause vs on vs.volunteer_id=v.volunteer_id
-group by vs.support_cause_id
-order by v.first_name ASC;
+CREATE OR REPLACE VIEW cause_volunteer AS
+SELECT v.volunteer_id, v.first_name, num_causes, c.cause_name
+FROM ngo_management_system.volunteer v INNER JOIN
+(SELECT volunteer_id, count(support_cause_id) AS num_causes
+FROM ngo_management_system.volunteer_support_cause GROUP BY volunteer_id) AS num_cause_table
+ON v.volunteer_id = num_cause_table.volunteer_id
+INNER JOIN ngo_management_system.volunteer_support_cause vs ON v.volunteer_id = vs.volunteer_id
+INNER JOIN ngo_management_system.cause c ON c.cause_id = vs.support_cause_id
+ORDER BY v.first_name ASC;
 
 SELECT * FROM ngo_management_system.cause_volunteer;
