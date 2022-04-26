@@ -51,5 +51,22 @@ public class InitDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+	}
+	
+	public void delete(InputStream input) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ngo_management_system", MySQL_user, MySQL_password);
+			
+			//Initialize the script runner
+	   		ScriptRunner sr = new ScriptRunner(connect);
+	   		//Creating a reader object
+	   		Reader reader = new InputStreamReader(input);
+	   		//Running the script
+	   		sr.runScript(reader);
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
 	}	
 }

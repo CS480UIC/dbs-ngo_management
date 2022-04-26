@@ -20,4 +20,8 @@ public class InitService {
 	public void initializeDB(InputStream input) throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException{
 		initDao.initialize(input);
 	}
+	
+	public void deleteDB(InputStream input) throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException{
+		initDao.delete(input);
+	}
 }

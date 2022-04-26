@@ -38,6 +38,7 @@
 			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
 			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp; 
 			<a href="<c:url value='/jsps/initialize/init.jsp'/>" target="body">Initialize Database</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/initialize/delete.jsp'/>" target="body">Delete all Tables</a> |&nbsp;&nbsp;
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
