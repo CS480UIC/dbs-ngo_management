@@ -20,7 +20,7 @@ SELECT COUNT(transaction_id) AS TOTAL_DONATION
 FROM ngo_management_system.donation
 WHERE time < '2022-02-03 05:00:00';
 
-SELECT SUM(num_of_donations) as num_donations
+SELECT first_name, SUM(num_of_donations) as num_donations
 FROM ngo_management_system.donor
 GROUP BY first_name
 HAVING SUM(num_of_donations) > 50;
