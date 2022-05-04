@@ -41,7 +41,7 @@ public class ResourceUsageServletDelete extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				resource_usage = resource_usageDao.findByResourceUsageId(Integer.parseInt(request.getParameter("resource_usage_id")));
+				resource_usage = resource_usageDao.findByResourceUsageId(Integer.parseInt(request.getParameter("usage_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -63,7 +63,7 @@ public class ResourceUsageServletDelete extends HttpServlet {
 		else if(method.equals("delete"))
 		{	
 			try {
-				resource_usageDao.delete(Integer.parseInt(request.getParameter("resource_usage_id")));
+				resource_usageDao.delete(Integer.parseInt(request.getParameter("usage_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
